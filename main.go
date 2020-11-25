@@ -29,16 +29,10 @@ func devision(ar []int) int{
 		if left >= right {
 			return right
 		}
-
-		swap(ar, left, right)
+		ar[left], ar[right] = ar[right], ar[left]
 	}
 }
 
-func swap(ar []int, i, j int){
-	tmp := ar[i]
-	ar[i] = ar[j]
-	ar[j] = tmp
-}
 
 
 func main() {
